@@ -1,1 +1,116 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
 
+body{
+font-family:Arial,sans-serif;
+background:linear-gradient(135deg,#7b2ff7,#f107a3);
+color:white;
+text-align:center;
+overflow-x:hidden;
+}
+
+.hero{
+padding:60px 20px;
+}
+
+h1{
+font-size:50px;
+margin-bottom:10px;
+animation:glow 2s infinite alternate;
+}
+
+h2{
+margin-bottom:20px;
+}
+
+.quote{
+font-size:18px;
+margin:20px auto;
+max-width:600px;
+}
+
+.photo{
+width:280px;
+height:auto;
+border-radius:20px;
+border:5px solid white;
+box-shadow:0 0 25px rgba(255,255,255,.5);
+margin:20px;
+transition:.4s;
+}
+
+.photo:hover{
+transform:scale(1.05);
+}
+
+.buttons{
+margin:20px;
+}
+
+button{
+padding:15px 25px;
+margin:10px;
+border:none;
+border-radius:50px;
+font-size:18px;
+background:#ff4081;
+color:white;
+cursor:pointer;
+transition:.3s;
+}
+
+button:hover{
+background:white;
+color:#ff4081;
+transform:scale(1.1);
+}
+
+#message{
+margin-top:20px;
+font-size:22px;
+font-weight:bold;
+color:#fff8dc;
+}
+
+#photos{
+padding:40px 20px;
+}
+
+.gallery{
+width:220px;
+margin:10px;
+border-radius:20px;
+box-shadow:0 0 15px rgba(255,255,255,.4);
+transition:.3s;
+}
+
+.gallery:hover{
+transform:scale(1.08);
+}
+
+.letter{
+padding:40px;
+max-width:800px;
+margin:auto;
+line-height:1.8;
+font-size:18px;
+}
+
+footer{
+padding:30px;
+background:rgba(0,0,0,.2);
+margin-top:40px;
+font-size:18px;
+}
+
+@keyframes glow{
+from{
+text-shadow:0 0 10px white;
+}
+to{
+text-shadow:0 0 30px pink,0 0 50px white;
+}
+}
